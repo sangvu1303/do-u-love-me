@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background: linear-gradient(45deg, #0579d1, #d138e9); */
+	background: url(/bg.jpg);
+	background-size: cover;
+}
+.question{
+	position:relative;
+	width: auto;
+	height: 600px;
+}
+h1 {
+	margin: 30px;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	color: #f8312f;
+}
+#btn {
+	width: 600px;
+	display: flex;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+}
+.bt1,.bt2 {
+	width: 250px;
+	height: 200px;
+	position: relative;
+}
+.bt1-tc,.bt1-dy,.bt2 {
+	background: #8AD385;
+	width: 250px;
+	height: 200px;
+	text-align: center;
+	line-height: 100px;
+	border-radius: 20px;
+}
+.bt2:hover {
+	background: #2be9e6;
+	color: red;
+	cursor: pointer;
+}
+.bt1 .bt1-dy {
+	position: absolute;
+	z-index: 1;
+}
+.bt1 .bt1-tc {
+	position: absolute;
+	z-index: 2;
+}
+.bt1:hover .bt1-dy {
+	position: absolute;
+	background: #2be9e6;
+	color: red;
+	cursor: pointer;
+}
+.bt1:hover .bt1-tc {
+	position: absolute;
+	z-index: 1;
+	cursor: pointer;
+}
